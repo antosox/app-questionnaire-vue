@@ -3,33 +3,127 @@
   "questions": [
     {
       "question": "Qui est le plus beau ?",
-      "reponsesPossibles": ["Antoine","Alexandre","Paul le Moche","Chuck Norris"],
-      "reponses": [1,3]
-    },
+      "reponses": [
+        {
+          "text": "Antoine",
+          "status": false,
+          "reponse": false
+        },
+        {
+          "text": "Alexandre",
+          "status": false,
+          "reponse": true
+        },
+        {
+          "text": "Paul le Moche",
+          "status": false,
+          "reponse": false
+        },
+        {
+          "text": "Chuck Norris",
+          "status": false,
+          "reponse": true
+        }
+    ]},
     {
       "question": "Aimez-vous l'entreprise ?",
-      "reponsesPossibles": ["Oui", "Non"],
-      "reponses": [0]
+      "reponses": [
+        {
+          "text": "Oui",
+          "status": false,
+          "reponse": true
+        },
+        {
+          "text": "Non",
+          "status": false,
+          "reponse": false
+        }
+      ]
     },
-    {
-      "question": "Dans Minecraft combien de diamant faut-il pour faire une armure complete ?",
-      "reponsesPossibles": ["12", "24", "Oui", "ça dépends si on a déjà des bouts de construits"],
-      "reponses": [0,1,3]
-    },
-    {
-      "question": "Si le roi d'angleterre a mis sa culotte à l'envers, est ce ça veut dire qu'il peut uriner par les fesses ?",
-      "reponsesPossibles": ["Oui", "Non", "Très Bonne question"],
-      "reponses": [0,2]
-    },
-    {
-      "question": "Si Naruto ce lève à midi, est ce que ça veut dire qu'il s'appel Narutard ?",
-      "reponsesPossibles": ["Oui", "Non", "ça dépends de l'heure à laquelle il c'est couché"],
-      "reponses": [0,2]
-    },
-    {
-      "question": "Pourquoi ?",
-      "reponsesPossibles": ["Oui", "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...", "Afrique du Sud"],
-      "reponses": [0,1,2]
-    }
-  ]
-}
+        {
+          "question": "Dans Minecraft combien de diamant faut-il pour faire une armure complete ?",
+          "reponses": [
+            {
+              "text": "12",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "24",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "Oui",
+              "status": false,
+              "reponse": false
+            },
+            {
+              "text": "ça dépends si on a déjà des bouts de construits",
+              "status": false,
+              "reponse": true
+            }
+          ]
+        },
+        {
+          "question": "Si le roi d'angleterre a mis sa culotte à l'envers, est ce ça veut dire qu'il peut uriner par les fesses ?",
+          "reponses": [
+            {
+              "text": "Oui",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "Non",
+              "status": false,
+              "reponse": false
+            },
+            {
+              "text": "Très Bonne question",
+              "status": false,
+              "reponse": true
+            }
+          ]
+        },
+        {
+          "question": "Si Naruto ce lève à midi, est ce que ça veut dire qu'il s'appel Narutard ?",
+          "reponses": [
+            {
+              "text": "Oui",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "Non",
+              "status": false,
+              "reponse": false
+            },
+            {
+              "text": "Ca dépends de l'heure à laquelle il c'est couché",
+              "status": false,
+              "reponse": true
+            }
+          ]
+        },
+        {
+          "question": "Pourquoi ?",
+          "reponses": [
+            {
+              "text": "Oui",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi...",
+              "status": false,
+              "reponse": true
+            },
+            {
+              "text": "Afrique du Sud",
+              "status": false,
+              "reponse": true
+            }
+          ]
+        }
+    ]
+  }

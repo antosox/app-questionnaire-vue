@@ -19,7 +19,12 @@
 </template>
 
 <script>
-export default {
+  import PouchDB from 'pouchdb'
+  import uuid from 'uuid'
+  const db = new PouchDB("questionnaire")
+
+  export default {
+
   props: {},
   data() {
     return {
@@ -38,11 +43,19 @@ export default {
       ],
     }
   },
+
   methods: {
     validate () {
       if (this.$refs.form.validate()) {
         this.snackbar = true
-        this.$router.push("/questionnaire")
+        var id = uuid()
+        db.put({
+          id: id,
+          name: this.name,
+          firstname: this.firstname,
+          company: this.company
+        })
+        this.$router.push("/questionnaire/" + id)
       }
     },
   },
@@ -53,15 +66,9 @@ export default {
       this.valid = true
     }
   }
-  // watch: {
-  //   valid: function (val, oldval) {
-  //     alert(val, oldval)
-  //   }
-  // }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>

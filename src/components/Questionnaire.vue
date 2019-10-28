@@ -15,7 +15,7 @@
                 <v-stepper-content v-for="n in nbrMaxQuestion" :key="`${n}-content`" :step="n">
                     <v-card class="mb-12" color="grey lighten-1" height="auto">
                         <v-card-title>{{questions[n].question}}</v-card-title>
-                        <v-checkbox :key="key" v-for="(reponsePossible, key) in questions[n].reponsesPossibles" class="mx-2" :label="reponsePossible" @change="setResult(n,key, value)"/>
+                        <v-checkbox :key="key" v-for="(reponsePossible, key) in questions[n].reponses" v-model="reponsePossible.statut" class="mx-2" :label="reponsePossible.text"/>
                     </v-card>
 
                     <v-btn v-if="e1 < nbrMaxQuestion" color="primary" @click="nextStep()">
@@ -34,6 +34,8 @@
 
 <script>
     import MyQuestion from "../assets/questions"
+    import PouchDB from "pouchdb"
+    const db = new PouchDB("questionnaire")
 
     export default {
         name: "Questionnaire",
@@ -41,22 +43,26 @@
             return {
                 nbrMaxQuestion: 5,
                 questions: MyQuestion.questions,
-                e1: 1,
+                e1: 0,
+                id: 0
             }
         },
 
         methods: {
-            result: [[]],
             nextStep(){
                 this.e1++
             },
             backStep(){
                 this.e1--
             },
-            setResult(idQuestion, idReponse, value){
-                alert(this.result)
-                this.result[idQuestion][idReponse] = value
-            },
+            endForm(){
+                this.id = this.$route.params.id
+                db.put({
+                    id: this.id,
+                    questions: this.questions
+                })
+                this.$router.push("/Myscore/" + this.id)
+            }
         }
     }
 </script>
