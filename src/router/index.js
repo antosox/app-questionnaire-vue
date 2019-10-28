@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
+import Questionnaire from "@/components/Questionnaire";
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,10 @@ const routes = [
     path: '/',
     name: 'login',
     component: Login
+  },  {
+    path: '/questionnaire',
+    name: 'questionnaire',
+    component: Questionnaire
   },
   // {
   //   path: '/questionnaire',
